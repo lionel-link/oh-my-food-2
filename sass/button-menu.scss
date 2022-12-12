@@ -1,0 +1,38 @@
+.buttonMenu {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    background-color: #F7F7F7;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 30px;
+
+    &__number {
+        position: relative;
+        right: 31px;
+        color: white;
+        font-size: 12px;
+        padding: 4px 8px;
+        background-color: #9356DC;
+        border-radius: 30px;
+    }
+
+    &__icon {
+        position: relative;
+        right: 13px;
+        font-size: 20px;
+        padding: 0 5px;
+        color: gray;
+    }
+}
+
+.buttonMenu:hover {
+    background-color: rgba(147, 86, 220, 0.2);
+
+    .buttonMenu__icon {
+        color: $primaire;
+    }
+}

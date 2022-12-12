@@ -1,0 +1,33 @@
+.iconContainer {
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+
+
+
+    &__img {
+        padding-top: 7px;
+        width: 20px;
+        height: 20px;
+        background-color: #F7F7F7;
+        z-index: 1;
+
+        &:hover {
+            opacity: 0;
+            transition: opacity 0.250s ease-in-out;
+        }
+
+        &:after {
+            opacity: 0;
+        }
+    }
+
+    &__imgColored {
+        position: relative;
+        top: 4px;
+        right: 23px;
+        width: 25px;
+        height: 25px;
+        z-index: 0;
+    }
+}

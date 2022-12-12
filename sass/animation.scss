@@ -1,0 +1,34 @@
+.fadeInTop {
+    animation: fadeInTop 1s ease-in-out;
+    animation-delay: 3s;
+}
+
+.fadeInTop1 {
+    animation: fadeInTop 1.5s ease-in-out;
+    animation-delay: 3.1s;
+}
+
+.fadeInTop2 {
+    animation: fadeInTop 2s ease-in-out;
+    animation-delay: 3.2s;
+}
+
+.fadeInTop3 {
+    animation: fadeInTop 2s ease-in-out;
+    animation-delay: 3.3s;
+}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.cardMenu__descriptionContainer {
+    display: flex;
+}

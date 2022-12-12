@@ -1,0 +1,213 @@
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+
+.logoMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    
+    &__icon {
+        position: relative;
+        right: 60px;
+        font-size: 22px;
+    }
+}
+
+.menuContainer {
+    padding-top: 200px;
+    background-color: #f7f7f7;
+    background-image: url(/images/a-la-francaise.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &__title {
+        display: flex;
+        padding: 40px 20px 0 20px;
+        background-color: #f7f7f7;
+        border-radius: 40px 40px 0 0;
+        font-family: Shrikhand;
+        font-size: 27px;
+
+        &>* {
+            flex: 1;
+        }
+    }
+}
+
+
+.cardMenuContainer {
+    margin: 20px 0;
+    padding: 0 20px;
+
+    &__title {
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 30px 0 10px 0;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 4px;
+            border-bottom: 4px solid $tertiaire;
+        }
+    }
+}
+
+.cardMenu {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px;
+    align-items: end;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    display: flex;
+    animation: reducerInverse 0.3s ease-in-out;
+
+
+    &__content {
+        display: flex;
+        padding: 12px;
+        justify-content: space-between;
+        min-width: 100%;
+        align-items: end;
+        box-sizing: border-box;
+        transition: min-width 400ms ease-in-out;
+    }
+
+    & .cardMenu__animated__icon {
+        animation: rotateInverse 0.3s ease-in-out;
+     }
+    
+
+    &:hover {
+        & .cardMenu__content {
+            transition: min-width 250ms ease-in-out;
+            min-width: 75%;
+        }
+
+        & .cardMenu__content__descriptionContainer__text {
+            width: 220px;
+        }
+
+        & .cardMenu__animated__icon {
+           animation: rotate 0.3s ease-in-out;
+           animation-delay: 0.2s;
+        }
+
+        & .cardMenu__content__price {
+            margin: 0 5px;
+        }
+    }
+}
+
+.cardMenu__animated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 73px;
+    background-color: $tertiaire;
+    border-radius: 0 15px 15px 0;
+    &__icon {
+        color: white;
+        font-size: 24px;
+    }
+}
+
+.cardMenu__content__descriptionContainer {
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 5px;
+
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 15px;
+        white-space: nowrap;
+        max-width: 250px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+.cardMenu__content__price {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menuBottom {
+    text-align: center;
+
+}
+
+.linearButton.linearButtonMenu {
+    padding: 15px 40px;
+    margin: 20px 0 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes reducer {
+    from {
+        min-width: 100%;
+    }
+
+    to {
+        min-width: 83%;
+    }
+}
+
+@keyframes reducerInverse {
+    from {
+        min-width: 83%;
+    }
+
+    to {
+        min-width: 100%;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateInverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
