@@ -1,1 +1,1 @@
-./dart-sass/sass sass/css/style.css --style=compressed --no-source-map
+./dart-sass/sass sass/index.scss public/css/style.css --style=compressed --no-source-map
