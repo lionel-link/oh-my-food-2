@@ -110,6 +110,10 @@ $tertiaire: #99E2D0;
             width: 220px;
         }
 
+        & .cardMenu__content__descriptionContainer__title {
+            width: 220px;
+        }
+
         & .cardMenu__animated__icon {
            animation: rotate 0.3s ease-in-out;
            animation-delay: 0.2s;
@@ -140,6 +144,10 @@ $tertiaire: #99E2D0;
         font-size: 16px;
         font-weight: 700;
         padding-bottom: 5px;
+        white-space: nowrap;
+        max-width: 250px;
+        text-overflow: ellipsis;
+        overflow: hidden;
 
     }
 
