@@ -16,10 +16,25 @@ $tertiaire: #99E2D0;
     }
 }
 
+.menuContainerBackground {
+    background-image: url(../images/a-la-francaise.jpg);
+}
+
+.menuContainerBackground1 {
+    background-image: url(../images/la-note-enchantee.jpg);
+}
+
+.menuContainerBackground2 {
+    background-image: url(../images/la-palette-du-gout.jpg);
+}
+
+.menuContainerBackground3 {
+    background-image: url(../images/le-delice-des-sens.jpg);
+}
+
 .menuContainer {
     padding-top: 200px;
     background-color: #f7f7f7;
-    background-image: url(./images/a-la-francaise.jpg);
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -61,15 +76,12 @@ $tertiaire: #99E2D0;
     height: 70px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: white;
     border-radius: 15px;
-    align-items: end;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-bottom: 15px;
     min-width: 100%;
     overflow: hidden;
-    display: flex;
     animation: reducerInverse 0.3s ease-in-out;
 
 
@@ -91,7 +103,7 @@ $tertiaire: #99E2D0;
     &:hover {
         & .cardMenu__content {
             transition: min-width 250ms ease-in-out;
-            min-width: 75%;
+            min-width: 85%;
         }
 
         & .cardMenu__content__descriptionContainer__text {

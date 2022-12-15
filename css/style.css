@@ -162,19 +162,19 @@
 }
 
 .menuContainerBackground {
-  background-image: url(../images/a-la-francaise.jpg);
+  background-image: url(./images/a-la-francaise.jpg);
 }
 
 .menuContainerBackground1 {
-  background-image: url(../images/la-note-enchantee.jpg);
+  background-image: url(./images/la-note-enchantee.jpg);
 }
 
 .menuContainerBackground2 {
-  background-image: url(../images/la-palette-du-gout.jpg);
+  background-image: url(./images/la-palette-du-gout.jpg);
 }
 
 .menuContainerBackground3 {
-  background-image: url(../images/le-delice-des-sens.jpg);
+  background-image: url(./images/le-delice-des-sens.jpg);
 }
 
 .menuContainer {
@@ -216,12 +216,15 @@
   height: 70px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: white;
   border-radius: 15px;
+  align-items: end;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin-bottom: 15px;
   min-width: 100%;
   overflow: hidden;
+  display: flex;
   animation: reducerInverse 0.3s ease-in-out;
 }
 .cardMenu__content {
@@ -238,7 +241,7 @@
 }
 .cardMenu:hover .cardMenu__content {
   transition: min-width 250ms ease-in-out;
-  min-width: 85%;
+  min-width: 75%;
 }
 .cardMenu:hover .cardMenu__content__descriptionContainer__text {
   width: 220px;
@@ -390,7 +393,7 @@ li {
   padding: 0 20px 50px 20px;
   background-color: #F7F7F7;
 }
-.cardContainer__title {
+.cardContainer____title {
   padding: 40px 0 20px 0;
 }
 
@@ -419,7 +422,6 @@ li {
   padding: 5px 10px;
   border-radius: 2px;
   background-color: #99E2D0;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .card__description {
   height: 60px;
