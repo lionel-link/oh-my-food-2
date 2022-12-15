@@ -178,7 +178,7 @@
 }
 
 .menuContainer {
-  padding-top: 200px;
+  padding: 200px 0 1px 0;
   background-color: #f7f7f7;
   background-repeat: no-repeat;
   background-size: contain;
@@ -273,7 +273,6 @@
   font-weight: 700;
   padding-bottom: 5px;
   white-space: nowrap;
-  max-width: 250px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -281,7 +280,6 @@
   font-weight: 300;
   font-size: 15px;
   white-space: nowrap;
-  max-width: 250px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -293,6 +291,7 @@
 
 .menuBottom {
   text-align: center;
+  background-color: #f7f7f7;
 }
 
 .linearButton.linearButtonMenu {
