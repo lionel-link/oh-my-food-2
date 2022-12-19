@@ -12,7 +12,7 @@ body {
     font-size: 16px;
     width: 375px;
     margin: 0 auto;
-    font-family: 'Roboto', 'Shrikhand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     position: relative;
 }
@@ -131,13 +131,15 @@ li {
     }
 }
 
-.card__description__textContainer {
-    &__title {
+.card__textContainer {
+    & .card__title{
+        font-size: 16px;
         font-weight: 700;
         padding-bottom: 10px;
+        margin: 0;
     }
 
-    &__text {
+    & .card__subtitle {
         position: relative;
         top: -5px
     }

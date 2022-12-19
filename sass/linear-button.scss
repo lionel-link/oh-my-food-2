@@ -1,6 +1,6 @@
 .linearButton {
     color: white;
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient($secondaire, $primaire);
     margin-top: 30px;
     border-radius: 30px;
     padding: 15px 20px;
@@ -8,7 +8,7 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     &:hover {
-        background: linear-gradient(#f394d8, #ac7de6);
+        background: linear-gradient($secondaire-light, $primaire-light);
         box-shadow: rgba(99, 99, 99, 0.2) 0px 6px 12px 0px;
     }
 }

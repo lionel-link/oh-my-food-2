@@ -74,6 +74,10 @@
   font-size: 25px;
   display: flex;
   justify-content: flex-end;
+  border: none;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
 }
 .iconContainer__img {
   padding-top: 7px;
@@ -188,10 +192,12 @@
   padding: 40px 20px 0 20px;
   background-color: #f7f7f7;
   border-radius: 40px 40px 0 0;
+}
+
+.menuTitle {
   font-family: Shrikhand;
   font-size: 27px;
-}
-.menuContainer__title > * {
+  margin: 0;
   flex: 1;
 }
 
@@ -203,6 +209,7 @@
   font-size: 18px;
   text-transform: uppercase;
   padding: 30px 0 10px 0;
+  font-weight: 400;
 }
 .cardMenuContainer__title::after {
   content: "";
@@ -240,17 +247,17 @@
   transition: min-width 250ms ease-in-out;
   min-width: 85%;
 }
-.cardMenu:hover .cardMenu__content__descriptionContainer__text {
+.cardMenu:hover .cardMenu__subtitle {
   width: 220px;
 }
-.cardMenu:hover .cardMenu__content__descriptionContainer__title {
+.cardMenu:hover .cardMenu__title {
   width: 220px;
 }
 .cardMenu:hover .cardMenu__animated__icon {
   animation: rotate 0.3s ease-in-out;
   animation-delay: 0.2s;
 }
-.cardMenu:hover .cardMenu__content__price {
+.cardMenu:hover .cardMenu__price {
   margin: 0 5px;
 }
 
@@ -268,15 +275,16 @@
   font-size: 24px;
 }
 
-.cardMenu__content__descriptionContainer__title {
+.cardMenu__description .cardMenu__title {
   font-size: 16px;
   font-weight: 700;
   padding-bottom: 5px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  margin: 0;
 }
-.cardMenu__content__descriptionContainer__text {
+.cardMenu__description .cardMenu__subtitle {
   font-weight: 300;
   font-size: 15px;
   white-space: nowrap;
@@ -284,7 +292,7 @@
   overflow: hidden;
 }
 
-.cardMenu__content__price {
+.cardMenu__price {
   font-size: 14px;
   font-weight: 700;
 }
@@ -297,6 +305,11 @@
 .linearButton.linearButtonMenu {
   padding: 15px 40px;
   margin: 20px 0 40px;
+}
+
+.footerLink a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @keyframes reducer {
@@ -335,7 +348,7 @@ body {
   font-size: 16px;
   width: 375px;
   margin: 0 auto;
-  font-family: "Roboto", "Shrikhand", sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   position: relative;
 }
@@ -437,11 +450,13 @@ li {
   flex: 1;
 }
 
-.card__description__textContainer__title {
+.card__textContainer .card__title {
+  font-size: 16px;
   font-weight: 700;
   padding-bottom: 10px;
+  margin: 0;
 }
-.card__description__textContainer__text {
+.card__textContainer .card__subtitle {
   position: relative;
   top: -5px;
 }
