@@ -202,8 +202,8 @@
 }
 
 .cardMenuContainer {
-  margin: 20px 0;
-  padding: 0 20px;
+  padding: 20px 20px;
+  background-color: #f7f7f7;
 }
 .cardMenuContainer__title {
   font-size: 18px;
@@ -312,6 +312,23 @@
   color: inherit;
 }
 
+@media screen and (min-width: 800px) {
+  body {
+    width: 1200px;
+  }
+  .cardMenuContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cardMenuContainer__title {
+    flex: 1 0 100%;
+  }
+  .cardMenu {
+    min-width: inherit;
+    width: 365px;
+  }
+}
 @keyframes reducer {
   from {
     min-width: 100%;
@@ -479,6 +496,35 @@ footer li {
 
 .footer__menu__li__icon {
   padding-right: 5px;
+}
+
+/***************************************** MOBILE ******************************/
+@media screen and (min-width: 800px) {
+  body {
+    width: 1200px;
+  }
+  .mainContainer {
+    display: flex;
+    padding: 20px 20px 50px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .mainContainer__title {
+    flex: 1 0 100%;
+  }
+  .cardContainer {
+    display: flex;
+    padding: 0 20px 50px 20px;
+    background-color: #F7F7F7;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cardContainer__title {
+    flex: 1 0 100%;
+  }
+  .card {
+    margin-bottom: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
