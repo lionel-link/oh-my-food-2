@@ -1,32 +1,40 @@
 @keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes zoom {
-    from { transform: scale(0); }
-    to   { transform: scale(1); }
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .loaderContainer {
-    opacity: 1;
-        opacity: 1;
-        background: white;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom:0;
-        position: absolute;
-        z-index: 1000;
-        animation: 1s fadeout;
-        animation-delay: 3s;
-        animation-fill-mode: forwards;
-        pointer-events: none;
-    }
+  opacity: 1;
+  opacity: 1;
+  background: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1000;
+  animation: 1s fadeout;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
 
-    .loader {
-        position: relative;
-        top:30%;
-        text-align: center; 
-        animation: 1s zoom infinite;
-    }
+.loader {
+  position: relative;
+  top: 30%;
+  text-align: center;
+  animation: 1s zoom infinite;
+}

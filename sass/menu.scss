@@ -6,6 +6,7 @@
   padding: 20px 0 10px 0;
 
   &__icon {
+    color: black;
     position: relative;
     right: 60px;
     font-size: 22px;
@@ -79,7 +80,6 @@
   margin-bottom: 15px;
   min-width: 100%;
   overflow: hidden;
-  animation: reducerInverse 0.3s ease-in-out;
 
   &__content {
     display: flex;

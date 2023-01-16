@@ -6,209 +6,194 @@
 @import "linear-button.scss";
 @import "menu.scss";
 
-
-
 body {
-    font-size: 16px;
-    width: 375px;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    position: relative;
+  font-size: 16px;
+  width: 375px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  position: relative;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .title {
-    font-size: 25px;
-    font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-
-
-
-
 .header {
-    &__img {
-        text-align: center;
-        padding: 30px 0 10px 0;
-    }
+  &__img {
+    text-align: center;
+    padding: 30px 0 10px 0;
+  }
 
-    &__location {
-        color: #353535;
-        font-weight: 700;
-        text-align: center;
-        background-color: #EAEAEA;
-        padding: 20px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px inset;
-    }
+  &__location {
+    color: #353535;
+    font-weight: 700;
+    text-align: center;
+    background-color: #eaeaea;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px inset;
+  }
 
-    &__location__i {
-        color: #353535;
-        padding-right: 20px;
-    }
+  &__location__i {
+    color: #353535;
+    padding-right: 20px;
+  }
 }
 
 .topContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 20px 50px 20px;
-    background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 50px 20px;
+  background-color: #f7f7f7;
 
-    &>* {
-        text-align: center;
-    }
+  & > * {
+    text-align: center;
+  }
 
-    &__title {
-        padding: 0 30px;
-    }
+  &__title {
+    padding: 0 30px;
+  }
 }
 
 .mainContainer {
-    padding: 20px 20px 50px 20px;
+  padding: 20px 20px 50px 20px;
 
-    &__title {
-        padding-bottom: 30px;
-    }
+  &__title {
+    padding-bottom: 30px;
+  }
 }
 
 .cardContainer {
-    padding: 0 20px 50px 20px;
-    background-color: #F7F7F7;
+  padding: 0 20px 50px 20px;
+  background-color: #f7f7f7;
 
-    &__title {
-        padding: 40px 0 20px 0;
-    }
+  &__title {
+    padding: 40px 0 20px 0;
+  }
 }
 
 .card {
-    display: block;
+  display: block;
+  width: 335px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: inherit;
+
+  &__img {
     width: 335px;
-    border-radius: 20px;
-    box-sizing: border-box;
+    height: 175px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+
+  &__label {
+    font-size: 14px;
+    color: #184439;
+    position: relative;
+    top: -240px;
+    left: 250px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: $tertiaire;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: inherit;
+  }
 
-    &__img {
+  &__description {
+    height: 60px;
+    display: flex;
+    padding: 15px 20px 0 20px;
+    margin-top: -5px;
 
-        width: 335px;
-        height: 175px;
-        border-radius: 15px 15px 0 0;
-        object-fit: cover;
+    & > * {
+      flex: 1;
     }
-
-    &__label {
-        font-size: 14px;
-        color: #184439;
-        position: relative;
-        top: -165px;
-        left: 250px;
-        padding: 5px 10px;
-        border-radius: 2px;
-        background-color: $tertiaire;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-
-    &__description {
-        height: 60px;
-        display: flex;
-        padding: 0 20px;
-        margin-top: -5px;
-
-        &>* {
-            flex: 1;
-        }
-    }
+  }
 }
 
 .card__textContainer {
-    & .card__title {
-        font-size: 16px;
-        font-weight: 700;
-        padding-bottom: 10px;
-        margin: 0;
-    }
+  & .card__title {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin: 0;
+  }
 
-    & .card__subtitle {
-        position: relative;
-        top: -5px
-    }
+  & .card__subtitle {
+    position: relative;
+    top: -5px;
+  }
 }
 
-
 footer {
-    padding: 30px 25px;
-    background-color: #353535;
+  padding: 30px 25px;
+  background-color: #353535;
 
-    li {
-        color: white;
-        padding-bottom: 10px;
-    }
+  li {
+    color: white;
+    padding-bottom: 10px;
+  }
 }
 
 .footer__logo {
-    color: white;
-    width: 100px;
-    height: 20px;
-    margin-bottom: 20px;
+  color: white;
+  width: 100px;
+  height: 20px;
+  margin-bottom: 20px;
 }
 
 .footer__menu__li__icon {
-    padding-right: 5px;
+  padding-right: 5px;
 }
-
-
 
 /***************************************** MOBILE ******************************/
 
-
-
 @media screen and (min-width: 800px) {
+  body {
+    width: 1200px;
+  }
 
+  .mainContainer {
+    display: flex;
+    padding: 20px 20px 50px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-
-
-    body {
-        width: 1200px;
+    &__title {
+      flex: 1 0 100%;
     }
+  }
 
-    .mainContainer {
-        display: flex;
-        padding: 20px 20px 50px 20px;
-        flex-wrap: wrap;
-        justify-content: space-between;
+  .cardContainer {
+    display: flex;
+    padding: 0 20px 50px 20px;
+    background-color: #f7f7f7;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-        &__title {
-            flex: 1 0 100%;
-        }
+    &__title {
+      flex: 1 0 100%;
     }
+  }
 
-    .cardContainer {
-        display: flex;
-        padding: 0 20px 50px 20px;
-        background-color: #F7F7F7;
-        flex-wrap: wrap;
-        justify-content: space-between;
+  .card {
+    margin-bottom: 50px;
+  }
 
-        &__title {
-            flex: 1 0 100%;
-        }
-    }
-
-    .card {
-        margin-bottom: 50px;
-
-    }
-
-
+  .card__label {
+    top: -280px;
+  }
 }

@@ -1,36 +1,33 @@
-.fadeInTop {
-  animation: fadeInTop 1s ease-in-out;
-  animation-delay: 3s;
+.cardMenu {
+  cursor: pointer;
+  animation-name: fadeInTop;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
 }
 
 .fadeInTop1 {
-  animation: fadeInTop 1.5s ease-in-out;
-  animation-delay: 3.1s;
+  animation-delay: 0.5s;
 }
 
 .fadeInTop2 {
-  animation: fadeInTop 2s ease-in-out;
-  animation-delay: 3.2s;
+  animation-delay: 1s;
 }
 
 .fadeInTop3 {
-  animation: fadeInTop 2s ease-in-out;
-  animation-delay: 3.3s;
+  animation-delay: 1.5s;
 }
 
 @keyframes fadeInTop {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translate3d(0, 30px, 0);
   }
   to {
     opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
-.cardMenu__descriptionContainer {
-  display: flex;
-}
-
 @keyframes fadeout {
   from {
     opacity: 1;
@@ -160,6 +157,7 @@
   padding: 20px 0 10px 0;
 }
 .logoMenu__icon {
+  color: black;
   position: relative;
   right: 60px;
   font-size: 22px;
@@ -229,7 +227,6 @@
   margin-bottom: 15px;
   min-width: 100%;
   overflow: hidden;
-  animation: reducerInverse 0.3s ease-in-out;
 }
 .cardMenu__content {
   display: flex;
@@ -392,7 +389,7 @@ li {
   color: #353535;
   font-weight: 700;
   text-align: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px inset;
 }
@@ -406,7 +403,7 @@ li {
   flex-direction: column;
   align-items: center;
   padding: 20px 20px 50px 20px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 .topContainer > * {
   text-align: center;
@@ -424,7 +421,7 @@ li {
 
 .cardContainer {
   padding: 0 20px 50px 20px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 .cardContainer__title {
   padding: 40px 0 20px 0;
@@ -450,7 +447,7 @@ li {
   font-size: 14px;
   color: #184439;
   position: relative;
-  top: -165px;
+  top: -240px;
   left: 250px;
   padding: 5px 10px;
   border-radius: 2px;
@@ -460,7 +457,7 @@ li {
 .card__description {
   height: 60px;
   display: flex;
-  padding: 0 20px;
+  padding: 15px 20px 0 20px;
   margin-top: -5px;
 }
 .card__description > * {
@@ -515,7 +512,7 @@ footer li {
   .cardContainer {
     display: flex;
     padding: 0 20px 50px 20px;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -524,6 +521,9 @@ footer li {
   }
   .card {
     margin-bottom: 50px;
+  }
+  .card__label {
+    top: -280px;
   }
 }
 
